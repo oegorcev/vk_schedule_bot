@@ -16,6 +16,7 @@ def parse(html):
     projects = []
     i = 1
 
+
     if table.find_all('tr'):
         for row in table.find_all('tr')[2:]:
             cols = row.find_all('td')
@@ -36,14 +37,15 @@ def parse(html):
                     j = 0
                     for cnt in projects[len(projects) - 1]:
                         if projects[len(projects) - 1][cnt][1] == If_TWO_WEEKS:
-                            projects[len(projects) - 1][cnt] = (projects[len(projects) - 1][cnt][0], cols[j].text)
+                            projects[len(projects) - 1][cnt] = (cols[j].text, projects[len(projects) - 1][cnt][0])
                             j += 1
 
                 else:
                     for cnt in projects[len(projects) - 1]:
                         if projects[len(projects) - 1][cnt][1] == If_TWO_WEEKS:
-                            projects[len(projects) - 1][cnt][1] = (projects[len(projects) - 1][cnt][0], '')
+                            projects[len(projects) - 1][cnt][1] = ('', projects[len(projects) - 1][cnt][0])
             i += 1
+
 
     return projects
 

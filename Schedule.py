@@ -86,10 +86,15 @@ def get_Schedule(request, action):
     s = 'http://asu.tti.sfedu.ru/Raspisanie/ShowRaspisanie.aspx?Substance=' + request + '&isPotok=' + cur_pot() + '&Semestr=' + cur_sem()
 
     data = Parser.parse(Parser.get_html(s))
+    dataEx = []
+    '''
     if data:
         dataEx = Parser.parse_exams(Parser.get_html(s))
     else:
         return u'Такой группы не существует :('
+    
+    '''
+    print(1)
 
     if data and dataEx and flag == 0:
         output = make_output_data(data, action)
@@ -102,5 +107,5 @@ def get_Schedule(request, action):
         else:
             if dataEx:
                 output = make_output_data(dataEx, EXAMS)
-
+    
     return output
