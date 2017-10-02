@@ -24,17 +24,20 @@ def cur_pot():
 
     # Magic (cur year isocalendar()[0]) 213 - half + 30 of year
     curday = datetime.date.today().day
-    curpot = (datetime.date.today().year) - 1860 - (213 > curday)
+    curpot = 121
+
+	#curpot = 121
 
     return str(curpot)
-
 
 def cur_sem():
 
     curday = datetime.date.today().day
     if 213 > curday:
-        cursem = 2
+        cursem = 1
     else:
         cursem = 1
+
+	#cursem = 1
 
     return str(cursem)

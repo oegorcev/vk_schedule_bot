@@ -83,7 +83,7 @@ def get_Schedule(request, action):
     request = request.replace('\\u', '%u')
     request = request.replace('\'', '')
 
-    s = 'http://sfedu-tgn.ru/Raspisanie/ShowRaspisanie.aspx?Substance=' + request + '&isPotok=' + cur_pot() + '&Semestr=' + cur_sem()
+    s = 'http://asu.tti.sfedu.ru/Raspisanie/ShowRaspisanie.aspx?Substance=' + request + '&isPotok=' + cur_pot() + '&Semestr=' + cur_sem()
 
     data = Parser.parse(Parser.get_html(s))
     if data:
