@@ -7,3 +7,8 @@
 3) bs4
 
 Для запуска нужно запустить файл Bot.py, перед этим нужно установить токен своего собщества в этом же файле.
+
+Примеры работы бота:
+![Вывод расписания](https://github.com/olegman43/vk_schedule_bot/blob/master/Images/Example.JPG)
+![Help](https://github.com/olegman43/vk_schedule_bot/blob/master/Images/Help.JPG)
+![Сервер недоступен](https://github.com/olegman43/vk_schedule_bot/blob/master/Images/Server%20problems.JPG)
