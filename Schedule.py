@@ -87,13 +87,13 @@ def get_Schedule(request, action):
 
     data = Parser.parse(Parser.get_html(s))
     dataEx = []
-    '''
+    
     if data:
         dataEx = Parser.parse_exams(Parser.get_html(s))
     else:
         return u'Такой группы не существует :('
     
-    '''
+    
     print(1)
 
     if data and dataEx and flag == 0:

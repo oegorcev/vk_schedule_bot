@@ -7,7 +7,7 @@ TODAY = '1'
 TOMORROW = '2'
 FULL_WEEK = '3'
 EXAMS = '4'
-HELP = u'Чтобы воспользоваться ботом напиши такую команду:\n[Группа] [Действие]\nСписок доступных действий:\n1 - расписание на сегодня;\n2 - расписание на завтра;\n3 - расписание на неделю.\nПример: КТбо3-8 1\nБот написан быдлокодером, прошу не ругаться ) ' + emoji.emojize(':wheelchair:', use_aliases=True)
+HELP = u'Чтобы воспользоваться ботом напиши такую команду:\n[Группа] [Действие]\nСписок доступных действий:\n1 - расписание на сегодня;\n2 - расписание на завтра;\n3 - расписание на неделю.\nПример: КТбо3-8 1\n'
 ERROR = emoji.emojize(':x:', use_aliases=True) + u'Сервер в данный момент недоступен' +  emoji.emojize(':x:', use_aliases=True)
 BAD_GROUP = U'уэбо3-1'
 REPAIR_BAD_GROUP = U'Уэбо3-1'
@@ -34,7 +34,7 @@ def cur_sem():
 
     curday = datetime.date.today().day
     if 213 > curday:
-        cursem = 1
+        cursem = 2
     else:
         cursem = 1
 

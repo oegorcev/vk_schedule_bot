@@ -4,7 +4,7 @@ import Schedule
 import Constants
 import Utilities
 
-vk = vk_api.VkApi(token='xxxxx') #Авторизоваться как сообщество
+vk = vk_api.VkApi(token='xxx') #Авторизоваться как сообщество
 vk.auth()
 listqueue = []
 
